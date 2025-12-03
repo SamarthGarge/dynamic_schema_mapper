@@ -352,7 +352,7 @@ MIT License - see [LICENSE](LICENSE) file.
 - **Discussions**: [GitHub Discussions](https://github.com/SamarthGarge/dynamic_schema_mapper/discussions)
 - **Email**: gargesamarth@gmail.com
 
-## ⭐ <u><Show Your Support</u>
+## ⭐ <u>Show Your Support</u>
 
 If this package helps your project, give it a ⭐ on [GitHub](https://github.com/SamarthGarge/dynamic_schema_mapper)!
 
