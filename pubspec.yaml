@@ -1,6 +1,6 @@
 name: dynamic_schema_mapper
 description: Automatically map dynamic backend JSON to type-safe Dart structures at runtime without model classes. Perfect for evolving APIs.
-version: 0.1.0
+version: 0.1.0+1 # Increment build number for documentation fix
 homepage: https://github.com/SamarthGarge/dynamic_schema_mapper
 repository: https://github.com/SamarthGarge/dynamic_schema_mapper
 

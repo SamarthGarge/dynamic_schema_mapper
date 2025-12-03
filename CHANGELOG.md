@@ -1,3 +1,7 @@
+## 0.1.0+1
+
+* Fixed README formatting for better pub.dev display
+
 ## 0.1.0
 
 * Initial release

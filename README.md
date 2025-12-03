@@ -5,7 +5,7 @@
 [![pub package](https://img.shields.io/pub/v/dynamic_schema_mapper.svg)](https://pub.dev/packages/dynamic_schema_mapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Why This Package?
+## Why This Package?
 
 Backend APIs evolve constantly—new fields get added, old ones removed, types change. Traditional model classes break easily, requiring constant maintenance. **Dynamic Backend Schema Mapper** solves this by:
 
@@ -16,7 +16,7 @@ Backend APIs evolve constantly—new fields get added, old ones removed, types c
 - ✅ **Deep Nesting** — Fully supports nested objects and lists
 - ✅ **Crash Prevention** — Default values prevent null reference errors
 
-## 📱 Demo
+## Demo
 
 ### Schema Parsing & Type-Safe Access
 ![Dynamic Schema Parsing](https://s12.gifyu.com/images/b9eHz.gif)
@@ -28,7 +28,7 @@ Backend APIs evolve constantly—new fields get added, old ones removed, types c
 
 *Automatic detection and notification of backend schema changes*
 
-## 📦 Installation
+## Installation
 
 Add to your `pubspec.yaml`:
 
@@ -43,7 +43,7 @@ Then run:
 flutter pub get
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Basic Usage
 
@@ -149,7 +149,7 @@ DynamicSchema.parse({
 // • Fields Added: inStock
 ```
 
-## 🎨 Features
+## Features
 
 ### Type-Safe Getters
 
@@ -215,7 +215,7 @@ if (await cache.hasValidCache('users')) {
 }
 ```
 
-## 🖼️ Screenshots
+## Screenshots
 
 <table>
   <tr>
@@ -236,7 +236,7 @@ if (await cache.hasValidCache('users')) {
 
 
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 dynamic_schema_mapper/
@@ -256,7 +256,7 @@ dynamic_schema_mapper/
 - **SchemaDiff**: Detects changes between schemas
 - **CacheManager**: Optional local schema storage
 
-## 📊 Real-World Example
+## Real-World Example
 
 ```dart
 // Complex e-commerce order
@@ -286,7 +286,7 @@ final paid = payment?.getBool('paid') ?? false;
 print('Payment status: ${paid ? 'PAID' : 'PENDING'}');
 ```
 
-## 🔥 Advanced Usage
+## Advanced Usage
 
 ### Compare Two Schemas
 
@@ -321,38 +321,38 @@ schema.printTree();
 // }
 ```
 
-## ⚡ Performance
+## Performance
 
 - **Fast Parsing**: Minimal overhead compared to manual models
 - **Lazy Evaluation**: Only processes accessed fields
 - **Memory Efficient**: Shared references, no duplication
 
 
-## 📝 Note : 
+## Note : 
 **Performance varies based on JSON size and structure. The package is optimized for real-world use cases where flexibility is more important than raw speed.**
 
 **The package is optimized for real-world scenarios where API flexibility and zero maintenance are priorities. Performance characteristics scale well with JSON size, with lazy evaluation ensuring only accessed fields are processed.**
 
-## ⚠️ Limitations
+## Limitations
 
 - **No Static Types**: Fields are accessed dynamically at runtime
 - **No Code Generation**: Everything happens at runtime
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, please open an issue on GitHub.
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file.
 
-## 💬 Support
+## Support
 
 - **Issues**: [GitHub Issues](https://github.com/SamarthGarge/dynamic_schema_mapper/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/SamarthGarge/dynamic_schema_mapper/discussions)
 - **Email**: gargesamarth@gmail.com
 
-## ⭐ Show Your Support
+## Show Your Support
 
 If this package helps your project, give it a ⭐ on [GitHub](https://github.com/SamarthGarge/dynamic_schema_mapper)!
 
