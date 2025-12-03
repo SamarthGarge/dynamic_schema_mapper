@@ -219,11 +219,16 @@ if (await cache.hasValidCache('users')) {
 
 <table>
   <tr>
-    <td><img src="example\screenshots\home_page.jpeg" alt="Basic Usage" width="300"/></td>
-    <td><img src="example\screenshots\basic_usage.jpeg" alt="Basic Usage" width="300"/></td>
-    <td><img src="example\screenshots\nested_objects.jpeg" alt="Nested Objects" width="300"/></td>
-    <td><img src="example\screenshots\list_and_arrays.jpeg" alt="Lists And Arrays" width="300"/></td>
-    <td><img src="example\screenshots\dashboard.jpeg" alt="Dashboard" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/SamarthGarge/dynamic_schema_mapper/main/example/screenshots/home_page.jpeg
+    " alt="Home Screen" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/SamarthGarge/dynamic_schema_mapper/main/example/screenshots/basic_usage.jpeg
+    " alt="Basic Usage" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/SamarthGarge/dynamic_schema_mapper/main/example/screenshots/nested_objects.jpeg
+    " alt="Nested Objects" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/SamarthGarge/dynamic_schema_mapper/main/example/screenshots/list_and_arrays.jpeg
+    " alt="Lists And Arrays" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/SamarthGarge/dynamic_schema_mapper/main/example/screenshots/dashboard.jpeg
+    " alt="Dashboard" width="300"/></td>
   </tr>
   <tr>
     <td align="center"><em>Home Screen</em></td>
