@@ -1,11 +1,11 @@
-# <u>Dynamic Backend Schema Mapper</u>
+# Dynamic Backend Schema Mapper
 
 **Runtime JSON Model Generator for Flutter** — Automatically adapt to evolving backend JSON structures without manual model updates.
 
 [![pub package](https://img.shields.io/pub/v/dynamic_schema_mapper.svg)](https://pub.dev/packages/dynamic_schema_mapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 <u>Why This Package?</u>
+## 🎯 Why This Package?
 
 Backend APIs evolve constantly—new fields get added, old ones removed, types change. Traditional model classes break easily, requiring constant maintenance. **Dynamic Backend Schema Mapper** solves this by:
 
@@ -16,19 +16,19 @@ Backend APIs evolve constantly—new fields get added, old ones removed, types c
 - ✅ **Deep Nesting** — Fully supports nested objects and lists
 - ✅ **Crash Prevention** — Default values prevent null reference errors
 
-## 📱 <u>Demo</u>
+## 📱 Demo
 
-### <u>Schema Parsing & Type-Safe Access</u>
+### Schema Parsing & Type-Safe Access
 ![Dynamic Schema Parsing](https://s12.gifyu.com/images/b9eHz.gif)
 
 *Demonstrating real-time JSON parsing with type-safe getters and default values*
 
-### <u>Schema Change Detection</u>
+### Schema Change Detection
 ![Schema Change Detection](https://s12.gifyu.com/images/b9eH2.gif)
 
 *Automatic detection and notification of backend schema changes*
 
-## 📦 <u>Installation</u>
+## 📦 Installation
 
 Add to your `pubspec.yaml`:
 
@@ -43,9 +43,9 @@ Then run:
 flutter pub get
 ```
 
-## 🚀 <u>Quick Start</u>
+## 🚀 Quick Start
 
-### <u>Basic Usage</u>
+### Basic Usage
 
 ```dart
 import 'package:dynamic_schema_mapper/dynamic_schema_mapper.dart';
@@ -71,7 +71,7 @@ final balance = schema.getDouble('balance');     // 1250.50
 final phone = schema.getString('phone', defaultValue: 'N/A');  // "N/A"
 ```
 
-### <u>Nested Objects</u>
+### Nested Objects
 
 ```dart
 final response = {
@@ -97,7 +97,7 @@ print(address?.getInt('zipcode'));        // 12345
 print(schema.getValueAtPath('user.address.city'));  // "Springfield"
 ```
 
-### <u>Lists of Objects</u>
+### Lists of Objects
 
 ```dart
 final response = {
@@ -118,7 +118,7 @@ for (final product in products) {
 // Mouse: $29.99
 ```
 
-### <u>Schema Change Detection</u>
+### Schema Change Detection
 
 Get notified automatically when your backend structure changes:
 
@@ -149,9 +149,9 @@ DynamicSchema.parse({
 // • Fields Added: inStock
 ```
 
-## 🎨 <u>Features</u>
+## 🎨 Features
 
-### <u>Type-Safe Getters</u>
+### Type-Safe Getters
 
 All getters include default values to prevent crashes:
 
@@ -181,7 +181,7 @@ final paths = schema.getAllPaths();
 final structure = schema.getSchemaStructure();
 ```
 
-### <u>Convert Back to JSON</u>
+### Convert Back to JSON
 
 ```dart
 // Pretty print
@@ -191,7 +191,7 @@ print(schema.toJsonString(pretty: true));
 final json = schema.toJsonString();
 ```
 
-### <u>Optional Caching</u>
+### Optional Caching
 
 Cache schemas locally for offline use or comparison:
 
@@ -215,7 +215,7 @@ if (await cache.hasValidCache('users')) {
 }
 ```
 
-## 🖼️ <u>Screenshots</u>
+## 🖼️ Screenshots
 
 <table>
   <tr>
@@ -236,7 +236,7 @@ if (await cache.hasValidCache('users')) {
 
 
 
-## 🏗️ <u>Architecture</u>
+## 🏗️ Architecture
 
 ```
 dynamic_schema_mapper/
@@ -249,14 +249,14 @@ dynamic_schema_mapper/
 │     └─ cache_manager.dart          # Optional caching
 ```
 
-### <u>Core Components</u>
+### Core Components
 
 - **SchemaNode**: Represents JSON values (primitives, objects, lists)
 - **SchemaParser**: Converts JSON to SchemaNode tree
 - **SchemaDiff**: Detects changes between schemas
 - **CacheManager**: Optional local schema storage
 
-## 📊 <u>Real-World Example</u>
+## 📊 Real-World Example
 
 ```dart
 // Complex e-commerce order
@@ -286,9 +286,9 @@ final paid = payment?.getBool('paid') ?? false;
 print('Payment status: ${paid ? 'PAID' : 'PENDING'}');
 ```
 
-## 🔥 <u>Advanced Usage</u>
+## 🔥 Advanced Usage
 
-### <u>Compare Two Schemas</u>
+### Compare Two Schemas
 
 ```dart
 final oldSchema = DynamicSchema.parse(oldApiResponse);
@@ -301,7 +301,7 @@ for (final change in changes) {
 }
 ```
 
-### <u>Debug Schema Tree</u>
+### Debug Schema Tree
 
 ```dart
 // Print entire schema structure
@@ -321,38 +321,38 @@ schema.printTree();
 // }
 ```
 
-## ⚡ <u>Performance</u>
+## ⚡ Performance
 
 - **Fast Parsing**: Minimal overhead compared to manual models
 - **Lazy Evaluation**: Only processes accessed fields
 - **Memory Efficient**: Shared references, no duplication
 
 
-## 📝 <u>Note</u> : 
+## 📝 Note : 
 **Performance varies based on JSON size and structure. The package is optimized for real-world use cases where flexibility is more important than raw speed.**
 
 **The package is optimized for real-world scenarios where API flexibility and zero maintenance are priorities. Performance characteristics scale well with JSON size, with lazy evaluation ensuring only accessed fields are processed.**
 
-## ⚠️ <u>Limitations</u>
+## ⚠️ Limitations
 
 - **No Static Types**: Fields are accessed dynamically at runtime
 - **No Code Generation**: Everything happens at runtime
 
-## 🤝 <u>Contributing</u>
+## 🤝 Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, please open an issue on GitHub.
 
-## 📄 <u>License</u>
+## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file.
 
-## 💬 <u>Support</u>
+## 💬 Support
 
 - **Issues**: [GitHub Issues](https://github.com/SamarthGarge/dynamic_schema_mapper/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/SamarthGarge/dynamic_schema_mapper/discussions)
 - **Email**: gargesamarth@gmail.com
 
-## ⭐ <u>Show Your Support</u>
+## ⭐ Show Your Support
 
 If this package helps your project, give it a ⭐ on [GitHub](https://github.com/SamarthGarge/dynamic_schema_mapper)!
 
