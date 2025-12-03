@@ -338,7 +338,7 @@ schema.printTree();
 - **No Static Types**: Fields are accessed dynamically at runtime
 - **No Code Generation**: Everything happens at runtime
 
-## 🤝 <u><Contributing</u>
+## 🤝 <u>Contributing</u>
 
 Contributions are welcome! If you find a bug or have a feature request, please open an issue on GitHub.
 
